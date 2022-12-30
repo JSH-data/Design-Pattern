@@ -1,11 +1,10 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../context/provider";
+import useThemeContext from "../../hooks/useThemeContext";
 
 export default function ListItem() {
-  const context = useContext(ThemeContext);
+  const theme = useThemeContext();
 
   return (
-    <li className="item" style={context ? context.theme : {}}>
+    <li className="item" style={theme.theme}>
       zz
     </li>
   );
