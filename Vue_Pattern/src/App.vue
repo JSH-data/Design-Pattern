@@ -1,25 +1,14 @@
 <template>
   <!--TODO: Layout 스타일 만들기-->
-  <div>
-    Header
-    <button @click="moveToContainer">Container/Presentational</button>
-  </div>
+  <Header />
   <router-view />
   <div>
     Footer
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  methods: {
-    moveToContainer() {
-      this.$router.push('/container')
-    }
-  }
-})
+<script setup lang="ts">
+import Header from '@/components/layout/HeaderLayout.vue'
 </script>
 
 <style scoped>
