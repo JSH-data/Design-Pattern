@@ -9,6 +9,9 @@ export default function Header() {
   const moveToContainerAndPresentation = () => {
     router.push('./ContainerAndPresentation')
   }
+  const moveToHocPattern = () => {
+    router.push('./Hoc')
+  }
   return (
     <div className="header">
       <button onClick={moveToProvider} className="Header-item">
@@ -16,6 +19,9 @@ export default function Header() {
       </button>
       <button onClick={moveToContainerAndPresentation} className="Header-item">
         Container/Presentation
+      </button>
+      <button onClick={moveToHocPattern} className="Header-item">
+        HOC Pattern
       </button>
     </div>
   );
